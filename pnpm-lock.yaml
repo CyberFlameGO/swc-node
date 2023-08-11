@@ -89,7 +89,7 @@ importers:
       react-dom: ^18.2.0
       sinon: ^14.0.0
     devDependencies:
-      '@swc-node/core': link:../core
+      '@swc-node/core': 1.10.4_@swc+core@1.3.2
       '@types/jest': 29.0.3
       '@types/react': 18.0.20
       '@types/react-dom': 18.0.6
@@ -106,8 +106,8 @@ importers:
       '@swc/core': '>= 1.3'
     dependencies:
       '@node-rs/xxhash': 1.2.1
-      '@swc-node/core': link:../core
-      '@swc-node/register': link:../register
+      '@swc-node/core': 1.10.4_@swc+core@1.3.2
+      '@swc-node/register': 1.6.6_lgtmxhje42doiwn2qby3dqdr4a
       '@swc/core': 1.3.2
 
   packages/loader:
@@ -118,8 +118,8 @@ importers:
       typescript: ^4.8.3
       webpack: ^5.74.0
     dependencies:
-      '@swc-node/core': link:../core
-      '@swc-node/register': link:../register
+      '@swc-node/core': 1.10.4_@swc+core@1.3.2
+      '@swc-node/register': 1.6.6_lgtmxhje42doiwn2qby3dqdr4a
       '@swc/core': 1.3.2
     devDependencies:
       typescript: 4.8.3
@@ -139,8 +139,8 @@ importers:
       tslib: ^2.4.0
       typescript: '>= 4.3'
     dependencies:
-      '@swc-node/core': link:../core
-      '@swc-node/sourcemap-support': link:../sourcemap-support
+      '@swc-node/core': 1.10.4_@swc+core@1.3.2
+      '@swc-node/sourcemap-support': 0.2.4
       colorette: 2.0.19
       debug: 4.3.4
       pirates: 4.0.5
@@ -3095,6 +3095,46 @@ packages:
   /@sinonjs/text-encoding/0.7.1:
     resolution: {integrity: sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==}
     dev: true
+
+  /@swc-node/core/1.10.4_@swc+core@1.3.2:
+    resolution: {integrity: sha512-ixZCb4LsSUPflnOxj4a8T5yTPzKbgvP+tF0N59Rk2+68ikFRt9Qci2qy9xfuDIQbuiONzXersrNpd+p598uH0A==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      '@swc/core': '>= 1.3'
+    dependencies:
+      '@swc/core': 1.3.2
+
+  /@swc-node/register/1.6.6_lgtmxhje42doiwn2qby3dqdr4a:
+    resolution: {integrity: sha512-KgnQrWLgtJzEgPpxvhOPUDonv1xreVumGdzXDQlDVIqU3vH+spW8ZYxxyjJVMh3G/mQG8E3bFvUMHIS+E3FL2w==}
+    peerDependencies:
+      '@swc/core': '>= 1.3'
+      typescript: '>= 4.3'
+    dependencies:
+      '@swc-node/core': 1.10.4_@swc+core@1.3.2
+      '@swc-node/sourcemap-support': 0.3.0
+      '@swc/core': 1.3.2
+      colorette: 2.0.19
+      debug: 4.3.4
+      pirates: 4.0.5
+      tslib: 2.6.1
+      typescript: 4.8.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@swc-node/sourcemap-support/0.2.4:
+    resolution: {integrity: sha512-lAi8xXFpUPMaABCI0sFdKQL4owsjw6BPGjtrVJ90sRCUS4yNPMT0KbTeTWCxB8oQwYbbaQGOusd/+kavNMqJcg==}
+    dependencies:
+      source-map-support: 0.5.21
+      tslib: 2.6.1
+    dev: false
+
+  /@swc-node/sourcemap-support/0.3.0:
+    resolution: {integrity: sha512-gqBJSmJMWomZFxlppaKea7NeAqFrDrrS0RMt24No92M3nJWcyI9YKGEQKl+EyJqZ5gh6w1s0cTklMHMzRwA1NA==}
+    dependencies:
+      source-map-support: 0.5.21
+      tslib: 2.6.1
+    dev: false
 
   /@swc/core-android-arm-eabi/1.3.2:
     resolution: {integrity: sha512-jCqckwATVC4HbNjjrJii6xZzFKl7ecxVtY94odGD15+7qu5VCMuLD+Pj3bYxIQxQyzvi1z8S/187uUrAKMC2/w==}
@@ -7384,8 +7424,8 @@ packages:
     resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
     dev: true
 
-  /json5/1.0.1:
-    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
+  /json5/1.0.2:
+    resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
     hasBin: true
     dependencies:
       minimist: 1.2.6
@@ -9710,7 +9750,7 @@ packages:
     resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
     dependencies:
       '@types/json5': 0.0.29
-      json5: 1.0.1
+      json5: 1.0.2
       minimist: 1.2.6
       strip-bom: 3.0.0
     dev: true
@@ -9721,6 +9761,10 @@ packages:
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+
+  /tslib/2.6.1:
+    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
+    dev: false
 
   /tsutils/3.21.0_typescript@4.8.3:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
